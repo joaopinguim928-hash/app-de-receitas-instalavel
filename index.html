@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Minhas Receitas</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>📖 Minhas Receitas</h1>
+  <button onclick="abrirFormulario()">➕ Adicionar Receita</button>
+</header>
+
+<main id="categorias"></main>
+
+<div id="formulario" class="modal">
+  <div class="modal-content">
+    <h2>Nova Receita</h2>
+    <input type="text" id="nome" placeholder="Nome da receita">
+    <textarea id="ingredientes" placeholder="Ingredientes"></textarea>
+    <textarea id="modo" placeholder="Modo de preparo"></textarea>
+    
+    <select id="categoria">
+      <option value="Doces">Doces</option>
+      <option value="Salgados">Salgados</option>
+      <option value="Bebidas">Bebidas</option>
+    </select>
+
+    <input type="file" id="imagem" accept="image/*">
+
+    <button onclick="salvarReceita()">Salvar</button>
+    <button onclick="fecharFormulario()">Cancelar</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

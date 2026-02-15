@@ -55,11 +55,14 @@ main {
   color: var(--cor-principal);
 }
 
-img {
+.receita img {
   width: 100%;
+  height: 200px;
+  object-fit: cover;
   border-radius: 15px;
   margin: 10px 0;
 }
+
 
 .modal {
   display: none;
